@@ -1,0 +1,41 @@
+{
+  "name": "@bonnhatnguyen/solana-sentinel",
+  "version": "1.0.0",
+  "description": "High-Performance Security Scanner & Drainer Detector for Solana — Audit token approvals, detect toxic delegates, simulate pre-flight transactions, and build atomic batch revokes",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "solana-sentinel": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "node --test dist/tests/*.test.js",
+    "test:src": "tsx --test src/tests/*.test.ts"
+  },
+  "keywords": [
+    "solana",
+    "security",
+    "drainer-detector",
+    "audit",
+    "spl-token",
+    "jito",
+    "mcp",
+    "wallet-guard",
+    "web3"
+  ],
+  "author": "bonnhatnguyen <bonnhatnguyen0@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
